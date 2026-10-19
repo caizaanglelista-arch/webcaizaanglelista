@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Caiza Anglelista Nawawie – Portofolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,700;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#fbf6f1;--surface:#ffffff;--text:#2a2023;--muted:#6f5f63;
+  --accent:#c2410c;--line:#eaddd3;--tint:#fdeadc;
+  --serif:'Fraunces',Georgia,'Times New Roman',serif;
+  --sans:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#17120f;--surface:#221b18;--text:#f5ece6;--muted:#b8a79f;
+    --accent:#fb923c;--line:#3a2d27;--tint:#2c211b;color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#17120f;--surface:#221b18;--text:#f5ece6;--muted:#b8a79f;
+  --accent:#fb923c;--line:#3a2d27;--tint:#2c211b;color-scheme:dark;
+}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65;font-size:17px}
+a{color:inherit}
+.wrap{max-width:960px;margin:0 auto;padding:0 22px}
+header.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px}
+.brand{font-family:var(--serif);font-weight:700;text-decoration:none;font-size:1.15rem}
+.nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-size:.92rem}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--accent)}
+@media(max-width:560px){.nav ul{gap:12px;font-size:.85rem}}
+.hero{padding:72px 0 56px}
+.eyebrow{display:inline-block;background:var(--tint);color:var(--accent);padding:5px 14px;border-radius:99px;font-size:.82rem;font-weight:600;letter-spacing:.04em}
+h1{font-family:var(--serif);font-size:clamp(2.2rem,7vw,4rem);line-height:1.1;margin:20px 0 18px;font-weight:700}
+h1 em{color:var(--accent);font-style:italic;font-weight:500}
+.lead{font-size:1.15rem;color:var(--muted);max-width:620px;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 24px;border-radius:99px;text-decoration:none;font-weight:600;font-size:.95rem;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn.ghost{color:var(--accent)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--serif);font-size:2rem;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 28px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:20px}
+.fact{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
+.fact b{display:block;font-family:var(--serif);font-size:1.05rem;color:var(--accent);margin-bottom:4px}
+.fact span{font-size:.92rem;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:26px}
+.icon{width:46px;height:46px;border-radius:14px;background:var(--tint);display:grid;place-items:center;font-size:1.4rem;margin-bottom:14px}
+.card h3{margin:0 0 8px;font-family:var(--serif);font-size:1.25rem}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.tl{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line)}
+.tl li{position:relative;margin-bottom:22px;padding-left:18px}
+.tl li::before{content:"";position:absolute;left:-31px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.tl h3{margin:0;font-size:1.08rem}
+.tl p{margin:2px 0 0;color:var(--muted);font-size:.95rem}
+.quote{font-family:var(--serif);font-style:italic;font-size:1.35rem;line-height:1.5;background:var(--tint);border-radius:24px;padding:34px;text-align:center}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.c{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;transition:transform .15s,border-color .15s}
+.c:hover{transform:translateY(-3px);border-color:var(--accent)}
+.c small{display:block;color:var(--muted);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.c strong{display:block;margin-top:4px;word-break:break-word}
+footer{text-align:center;padding:30px 22px;color:var(--muted);font-size:.88rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#top">Caiza.</a>
+  <ul>
+    <li><a href="#tentang">Tentang</a></li>
+    <li><a href="#keahlian">Keahlian</a></li>
+    <li><a href="#pengalaman">Pengalaman</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+</div></header>
+
+<main id="top">
+<div class="wrap">
+  <div class="hero">
+    <span class="eyebrow">Mahasiswa Seni Pertunjukan · Semester 1</span>
+    <h1>Halo, saya <em>Caiza Anglelista Nawawie</em>.</h1>
+    <p class="lead">Saya percaya seni adalah cara untuk menghasilkan karya, mengekspresikan perasaan, dan memberikan makna bagi orang lain.</p>
+    <div class="btns">
+      <a class="btn primary" href="#keahlian">Lihat Keahlian</a>
+      <a class="btn ghost" href="#kontak">Hubungi Saya</a>
+    </div>
+  </div>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p class="sub">Belajar, berkarya, dan terus berkembang.</p>
+    <p>Saya mahasiswa semester 1 di Institut Media Digital Emtek (IMDE), program studi Produksi Entertainment Seni Pertunjukan. Saya pribadi yang senang belajar hal baru, bertanggung jawab, dan terbuka terhadap berbagai pengalaman.</p>
+    <p>Saya ingin terus mengembangkan kemampuan, mengeksplorasi ide-ide kreatif, serta memahami proses di balik terciptanya sebuah karya dan pertunjukan.</p>
+    <div class="facts">
+      <div class="fact"><b>Senang belajar</b><span>Selalu ingin mencoba hal baru</span></div>
+      <div class="fact"><b>Bertanggung jawab</b><span>Konsisten dalam setiap peran</span></div>
+      <div class="fact"><b>Terbuka</b><span>Menyambut beragam pengalaman</span></div>
+    </div>
+  </section>
+
+  <section id="keahlian">
+    <h2>Keahlian</h2>
+    <p class="sub">Hal-hal yang saya tekuni dalam berkarya.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="icon">✂️</div>
+        <h3>Arts &amp; Kreatif</h3>
+        <p>Membuat karya kreatif melalui kegiatan seni dan kerajinan tangan, serta mengeksplorasi material untuk menghasilkan karya. Kegiatan ini melatih kreativitas, ketelitian, dan kesabaran saya dalam berkarya.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🎨</div>
+        <h3>Visual Art</h3>
+        <p>Mengeksplorasi ide dan mengekspresikan perasaan melalui karya lukisan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pengalaman">
+    <h2>Pengalaman</h2>
+    <p class="sub">Perjalanan saya sejauh ini.</p>
+    <ul class="tl">
+      <li><h3>Volunteer Kelana Jiwa</h3><p>Membantu anak-anak kecil dalam hal kesehatan.</p></li>
+      <li><h3>OSIS SMA · 2 Periode</h3><p>Terlibat aktif dalam organisasi selama dua periode kepengurusan.</p></li>
+      <li><h3>Mading Craft</h3><p>Berkarya lewat kerajinan dan desain majalah dinding.</p></li>
+      <li><h3>Pidato Bulan Bahasa</h3><p>Berlatih menyampaikan gagasan dan tampil di depan banyak orang.</p></li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="quote">“Berkarya bukan hanya soal hasil, tetapi tentang proses, rasa, dan makna yang sampai kepada orang lain.”</div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p class="sub">Mari terhubung dan berkolaborasi.</p>
+    <div class="contact">
+      <a class="c" href="mailto:caizaanglelista@gmail.com"><small>Email</small><strong>caizaanglelista@gmail.com</strong></a>
+      <a class="c" href="https://wa.me/6289514570036" target="_blank" rel="noopener"><small>WhatsApp</small><strong>0895-1457-0036</strong></a>
+      <a class="c" href="https://instagram.com/caisaanglelista28" target="_blank" rel="noopener"><small>Instagram</small><strong>@caisaanglelista28</strong></a>
+    </div>
+  </section>
+</div>
+</main>
+<footer>© 2026 Caiza Anglelista Nawawie</footer>
+</body>
+</html>
